@@ -6,15 +6,34 @@
 --secondary-main-background-color:#F5F4FA;
 --hero-footer-background-color:#2F303A;
 }
+p,h1,h2,h3,h4,h5,h6 {
+margin: 0;
+}
+
+ul,ol {
+margin: 0;
+padding-left: 0;
+}
 
 body {
 font-family: Roboto, sans-serif;
 color: var(--basic-color-text);
 }
 
+.container {
+width: 1200px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+
 /*-----Шапка сайта-----*/
-.section.header {
-background-color: var(--header-background-color);
+.section-header {
+padding-top: 24px;
+padding-bottom: 25px;
+
+background-color: var(--header-background-color)
+
 }
 
 .logo {
@@ -71,11 +90,15 @@ color: #2196F3;
 
 /*-------Герой------------*/
 .section-hero {
+padding: 200px 452px 280px 452px;
+
 background-color: var(--hero-footer-background-color);
 }
 
 
 .title {
+margin-bottom: 30px;
+max-width: 696px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -86,6 +109,8 @@ color: #FFFFFF;
 
 
 .btn {
+margin: 0 auto;
+
 cursor: pointer;
 background: var(--secondary-main-background-color);
 font-family: 'Roboto', sans-serif;
@@ -95,6 +120,7 @@ line-height: 1.88;
 display: flex;
 letter-spacing: 0.06em;
 color: #FFFFFF;
+background-color: #2196F3;
 }
 .btn:hover,
 .btn:focus {
@@ -103,6 +129,8 @@ background-color:  #2196F3;
 
 /*-------Особенности------------*/
 .section-char {
+padding-top: 94px;
+
 background-color: var(--header-background-color);
 }
 
@@ -120,6 +148,9 @@ margin: -1px;
 }
 
 .secondary-title {
+margin-bottom: 10px;
+max-width: 270px;
+
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -139,11 +170,20 @@ color: var(--secondary-color-text);
 list-style: none;
 }
 
+.section-char-item {
+max-width: 270px;
+}
+
 /*-------Примеры работ------------*/
 .section-work {
+padding-top: 94px;
+
+
 background-color: var(--header-background-color)
 }
 .title-work {
+margin-bottom: 50px;
+
 font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
@@ -157,15 +197,20 @@ list-style: none;
 
 /*-------Наша команда------------*/
 .section-team {
+padding-top: 94px;
+
 background-color: var(--secondary-main-background-color);
 }
 .team-title {
+
 font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 color: var(--basic-color-text);
 }
 .team-name-title {
+margin-bottom: 10px;
+
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
@@ -184,11 +229,27 @@ letter-spacing: 0.03em;
 color: var(--secondary-color-text);
 }
 
+.section-team-item {
+margin-top: 50px;
+
+}
+
+.container-card {
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: center;
+}
+
 /*-------Футер------------*/
 .footer {
 background-color: var(--hero-footer-background-color);
+padding-bottom: 60px;
 }
 .footer-logo {
+padding-top: 60px;
+margin-bottom: 20px;
+display: block;
+
 font-family: 'Raleway';
 font-size: 26px;
 line-height: 1.19;
@@ -206,6 +267,8 @@ color: #2196F3;
 }
 
 .address {
+
+
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -219,6 +282,9 @@ list-style: none;
 }
 
 .footer-mail {
+margin-top: 9px; 
+margin-bottom: 9px;   
+
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -228,6 +294,7 @@ text-decoration: none;
 }
 
 .footer-tel {
+
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -245,13 +312,15 @@ color: #2196F3;
 /*-------СТИЛІ СТОРІНКИ ПОРТФОЛІО------------*/
 
 /*-------Фильтр-----------*/
-.btm-list {
+.btn-list {
 background-color: var(--header-background-color);
 list-style: none;
 } 
 
 
-.btm-item {
+.btn-item {
+margin-bottom: 50px;
+
 cursor: pointer;
 background: var(--secondary-main-background-color);
 font-family: 'Roboto', sans-serif;
@@ -263,14 +332,16 @@ letter-spacing: 0.03em;
 color: var(--basic-color-text);
 }   
 
-.btm-item:hover,
-.btm.item:focus {
+.btn-item:hover,
+.btn.item:focus {
 background-color: #2196F3;
 }
 
 /*-------Список проектов-----------*/
 
 .section-text {
+padding-top: 94px;
+
 background-color: var(--header-background-color);
 }
 
@@ -279,6 +350,8 @@ list-style: none;
 }
 
 .project-title {
+margin-bottom: 4px;
+
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
@@ -291,4 +364,7 @@ font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--secondary-color-text);
+}
+.section-text-card {
+padding: 20px 24px;
 }
