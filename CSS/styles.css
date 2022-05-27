@@ -19,6 +19,7 @@ img {
 display: block;
 }
 
+
 body {
 font-family: Roboto, sans-serif;
 color: var(--basic-color-text);
@@ -323,7 +324,7 @@ color: #2196F3;
 }
 
 .address {
-
+margin-bottom: 9px;
 
 font-weight: 400;
 font-size: 14px;
@@ -332,37 +333,31 @@ letter-spacing: 0.03em;
 color: var(--header-background-color);
 font-style: normal;
 }
+.footer-mail {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: none;
+color: rgba(255, 255, 255, 0.6);
+}
+.footer-tel {
+text-decoration: none;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: none;
+color: rgba(255, 255, 255, 0.6);
+}
 
 .footer-list {
 list-style: none;
 }
 
-.footer-mail {
-margin-top: 9px; 
-margin-bottom: 9px;   
-
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-text-decoration: none;
-}
-
-.footer-tel {
-
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-text-decoration: none;
-}
-.footer-mail:hover,
-.footer-mail:focus,
-.footer-tel:hover,
-.footer-tel:focus {
-color: #2196F3;
+.footer-list-item {
+    margin-bottom: 9px;
+    
 }
 
 /*-------СТИЛІ СТОРІНКИ ПОРТФОЛІО------------*/
